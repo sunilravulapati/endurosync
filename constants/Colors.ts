@@ -1,0 +1,88 @@
+import { Platform } from 'react-native';
+
+export default {
+  light: {
+    primary: '#0066CC',
+    secondary: '#4ECDC4',
+    accent: '#FF6B6B',
+    background: '#F7F9FC',
+    card: '#FFFFFF',
+    text: '#1A1A1A',
+    border: '#E1E1E1',
+    notification: '#FF3B30',
+    success: '#34C759',
+    warning: '#FF9500',
+    danger: '#FF3B30',
+    info: '#5AC8FA',
+    gray: {
+      100: '#F5F5F5',
+      200: '#E1E1E1',
+      300: '#CCCCCC',
+      400: '#B3B3B3',
+      500: '#999999',
+      600: '#666666',
+      700: '#4D4D4D',
+      800: '#333333',
+      900: '#1A1A1A',
+    },
+    shadow: Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 8,
+      },
+      android: {
+        elevation: 4,
+      },
+      web: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 8,
+      },
+    }),
+  },
+  dark: {
+    primary: '#0A84FF',
+    secondary: '#30D5C8',
+    accent: '#FF6B6B',
+    background: '#121212',
+    card: '#1E1E1E',
+    text: '#F2F2F2',
+    border: '#2C2C2C',
+    notification: '#FF453A',
+    success: '#30D158',
+    warning: '#FF9F0A',
+    danger: '#FF453A',
+    info: '#64D2FF',
+    gray: {
+      100: '#1A1A1A',
+      200: '#2C2C2C',
+      300: '#3D3D3D',
+      400: '#4F4F4F',
+      500: '#666666',
+      600: '#999999',
+      700: '#B3B3B3',
+      800: '#CCCCCC',
+      900: '#F2F2F2',
+    },
+    shadow: Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 8,
+      },
+      android: {
+        elevation: 8,
+      },
+      web: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 8,
+      },
+    }),
+  },
+};
